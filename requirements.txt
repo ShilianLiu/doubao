@@ -1,0 +1,12 @@
+# 最小版本要求，兼容性更好
+langchain
+chromadb
+sentence-transformers
+pypdf
+python-docx
+transformers
+torch
+datasets
+numpy
+faiss-cpu
+unstructured

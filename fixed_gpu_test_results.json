@@ -1,0 +1,464 @@
+{
+  "summary": {
+    "total_questions": 50,
+    "correct_answers": 5,
+    "accuracy": 0.1,
+    "device": {
+      "device": "NVIDIA GeForce GTX 1650",
+      "allocated_memory_gb": "0.29",
+      "cached_memory_gb": "0.35"
+    }
+  },
+  "detailed_results": [
+    {
+      "question": "全国美国文学研究会的第十八届年会在哪所大学举办的？",
+      "generated_answer": "江苏师范大学",
+      "reference_answers": [
+        "厦门大学。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "过去五年地方财政用于社会保障支出的金额是多少？",
+      "generated_answer": "用",
+      "reference_answers": [
+        "6.5亿元。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "二审法院确定了什么样的赔偿金额？",
+      "generated_answer": "违法解除劳动合同赔偿金27,000元",
+      "reference_answers": [
+        "人民币57081.86元。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "郗鉴拒绝了谁的建议？",
+      "generated_answer": "张萛",
+      "reference_answers": [
+        "郗鉴拒绝了外戚庾亮废王导的建议。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "奇力锅炉公司支付了多少预付款？",
+      "generated_answer": "10万元",
+      "reference_answers": [
+        "10万元。"
+      ],
+      "is_correct": true,
+      "score": 0.8
+    },
+    {
+      "question": "产品的总行程是多少？",
+      "generated_answer": "、准确、易于阅读和理解；使用说明书不应用来掩盖设计上的缺陷”；———３．４与ＧＢ９９６９．１—１９９８中３．３相比，删除“对涉及环境和能源的产品”；———３．７与ＧＢ９９６９．１—１９９８中３．６相比，增加了“使用说明书应清晰地指明产品，说明该产品的型号、样式或种类，不应因",
+      "reference_answers": [
+        "10mm。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "邓某为什么会成为毒品贩子？",
+      "generated_answer": "邓某只有小学文",
+      "reference_answers": [
+        "出狱后接触到毒品并输掉大量赌资。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "文章主要讲了哪些历史人物？",
+      "generated_answer": "梁啟超、胡適、沈有鼎、方孝博",
+      "reference_answers": [
+        "织田信长和丰臣秀吉。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "在2012年，铜仁市的财政总收入增长了多少？",
+      "generated_answer": "21.06亿元，增长31.5%",
+      "reference_answers": [
+        "2012年，铜仁市的财政总收入增长了25.89%。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "禹在治理九州的过程中遇到了哪些困难？",
+      "generated_answer": "南巡",
+      "reference_answers": [
+        "禹遇到了山川地势复杂、土壤贫瘠、水患频繁等问题。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "主人公身边陆续出现了什么样的人物？",
+      "generated_answer": "并各自为政，互相对立。",
+      "reference_answers": [
+        "主人公身边陆续出现了众多美女，有邻家可人的大姐姐，冷艳高贵的女总裁，妩媚动人的交际花，还有火爆热辣的女警花。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "许茂忠是在什么时间将此案诉至法院的？",
+      "generated_answer": "2014年1月23日",
+      "reference_answers": [
+        "2014年1月23日。"
+      ],
+      "is_correct": true,
+      "score": 0.8888888888888888
+    },
+    {
+      "question": "本产品安全手册由哪家公司出版？",
+      "generated_answer": "兄弟工业株式会社",
+      "reference_answers": [
+        "兄弟工业株式会社。"
+      ],
+      "is_correct": true,
+      "score": 0.8888888888888888
+    },
+    {
+      "question": "被告人王德山被捕的时间是什么时候？",
+      "generated_answer": "2013年11月1日",
+      "reference_answers": [
+        "2013年11月1日9时许。"
+      ],
+      "is_correct": true,
+      "score": 0.6363636363636364
+    },
+    {
+      "question": "2018年韶关市的重点工作有哪些？",
+      "generated_answer": "五",
+      "reference_answers": [
+        "三大主题工作、三大重点民生和三大基础工程。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "原告请求赔偿的损失总额是多少？",
+      "generated_answer": "误工费",
+      "reference_answers": [
+        "40754.95元。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "如果对判决不服，应该向哪个法院提起上诉？",
+      "generated_answer": "北京市通州区人民法院",
+      "reference_answers": [
+        "湖南省湘潭市中级人民法院。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "凤凰是如何附体到镭射眼的身上的？",
+      "generated_answer": "凤凰附体到镭射眼等X战警身上。",
+      "reference_answers": [
+        "钢铁侠制造的机器将凤凰之力打散，使凤凰附体到镭射眼身上。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "万小霞提供的第二组证据证明了什么？",
+      "generated_answer": "通知单",
+      "reference_answers": [
+        "证明了王年方等三人与隆泉公司为挂靠关系。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "规档云的联系电话是多少？",
+      "generated_answer": "021-50710282",
+      "reference_answers": [
+        "19901949665。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "黃智海居士的解釋方法有哪兩種？",
+      "generated_answer": "阿彌陀經白話解釋",
+      "reference_answers": [
+        "一種是直接解釋，是照了經的字句，簡簡單單解釋；一種是用來根解釋，要把來根大略說幾句。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "一审判决认为郭海燕、范舒炜之间是否存在真实的股权转让关系？",
+      "generated_answer": "母子关系",
+      "reference_answers": [
+        "没有。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "2009年铜川市的旅游综合收入增长了多少？",
+      "generated_answer": "6.5亿元",
+      "reference_answers": [
+        "25%。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "如何考核导师培训？",
+      "generated_answer": "1 次",
+      "reference_answers": [
+        "采用积分制，每位导师每一轮次至少获得3个培训积分。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "西北农林科技大学图书馆何时开始使用计算机流通管理系统？",
+      "generated_answer": "1937",
+      "reference_answers": [
+        "1994年4月。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "万小霞提供的第二组证据证明了什么？",
+      "generated_answer": "通知单",
+      "reference_answers": [
+        "证明了王年方等三人与隆泉公司为挂靠关系。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "被告人王海江犯罪的主要手段是什么？",
+      "generated_answer": "诈骗罪",
+      "reference_answers": [
+        "虚构“高乐”、“赵佳”、“刘律师”、“胡建国”等人物，并以虚构人物的名义对被害人进行诈骗。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "教师如何申报“双师双能型”教师资格认定？",
+      "generated_answer": "书面申请",
+      "reference_answers": [
+        "在每年4月向所在二级学院提出书面申请，填写《浙江科技学院“双师双能型”教师资格认定申请表》，并提交相关证明材料。"
+      ],
+      "is_correct": false,
+      "score": 0.0851063829787234
+    },
+    {
+      "question": "2010年金华市的人均生产总值相比于2005年增加了多少元？",
+      "generated_answer": "12.7",
+      "reference_answers": [
+        "21479元。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "2020年浙江省的生产总值增长了多少？",
+      "generated_answer": "64613亿元",
+      "reference_answers": [
+        "3.6%。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "2010年全市农村自来水入户户数是多少？",
+      "generated_answer": "34万人",
+      "reference_answers": [
+        "1.12万户。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "今年我市的农民人均纯收入增长多少？",
+      "generated_answer": "4802元",
+      "reference_answers": [
+        "13%。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "湛江总面积多少平方公里？",
+      "generated_answer": "1.32万平方公里",
+      "reference_answers": [
+        "12471平方公里。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "九嶷山位于中国的哪个省份？",
+      "generated_answer": "湖南",
+      "reference_answers": [
+        "九嶷山位于中国湖南省境内。"
+      ],
+      "is_correct": false,
+      "score": 0.15384615384615385
+    },
+    {
+      "question": "2007年金华市的失业率是多少？",
+      "generated_answer": "8",
+      "reference_answers": [
+        "2.9%。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "法院判决被告应支付的利息按照什么利率计算？",
+      "generated_answer": "人民银行基准利率上浮0%计算",
+      "reference_answers": [
+        "按年利率6%支付逾期利息。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "徽州在哪一年被降为徽县？",
+      "generated_answer": "1368年（明洪武",
+      "reference_answers": [
+        "1377年。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "2012年规划建设了多少个农业产业园区？",
+      "generated_answer": "18个",
+      "reference_answers": [
+        "28个。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "Osmo Mobile 6支持哪些拍摄模式？",
+      "generated_answer": "DJI OM 补光手机夹及 DJI Mic 等配件",
+      "reference_answers": [
+        "包括运动延时、延时摄影、动态变焦、慢动作、视频、照片、全景拍摄和Story模式。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "本案法院判决原告胜诉还是被告胜诉？",
+      "generated_answer": "刘",
+      "reference_answers": [
+        "原告胜诉。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "产品应放置在什么样的环境中？",
+      "generated_answer": "容应简明、准确、易于阅读和理解；使用说明书不应用来掩盖设计上的缺陷”；———３．４与ＧＢ９９６９．１—１９９８中３．３相比，删除“对涉及环境和能源的产品”；———３．７与ＧＢ９９６９．１—１９９８中３．６相比，增加了“使用说明书应清晰地指明产品，说明该产品的型号、样式或种类",
+      "reference_answers": [
+        "温度10°C至35°C，湿度20%至80%。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "这是哪个市的政府工作报告？",
+      "generated_answer": "市",
+      "reference_answers": [
+        "防城港市。"
+      ],
+      "is_correct": false,
+      "score": 0.2
+    },
+    {
+      "question": "\"10\"在格网大小中代表什么意思？",
+      "generated_answer": "计算机病毒",
+      "reference_answers": [
+        "10m格网。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "泗阳县的著名特产有哪些？",
+      "generated_answer": "泗阳膘鸡、八集小花生等",
+      "reference_answers": [
+        "泗阳膘鸡、御珍酒、穿城大饼、八集小花生、丁庄大菜、泗阳白酥梨、王集小团饼、新袁羊肉等。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "钢铁项目的设备订购进展如何？",
+      "generated_answer": "品",
+      "reference_answers": [
+        "钢铁项目的设备订购正在加快进行。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "《桂林电子科技大学学生社团指导教师聘任及考核办法（试行）》的实施时间是什么时候？",
+      "generated_answer": "2021 年 5 月 11 日",
+      "reference_answers": [
+        "从公布之日起实施。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "Web方式使用时需要安装什么控件？",
+      "generated_answer": "邮箱",
+      "reference_answers": [
+        "AchiveX控件。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    },
+    {
+      "question": "韩庚哪一年在哪个音乐颁奖礼上获得了全球最佳艺人奖？",
+      "generated_answer": "欧洲音乐奖",
+      "reference_answers": [
+        "韩庚于2012年在MTV欧洲音乐奖获得了全球最佳艺人奖。"
+      ],
+      "is_correct": false,
+      "score": 0.19230769230769232
+    },
+    {
+      "question": "郑永涛购买的房屋位于哪个小区？",
+      "generated_answer": "漳平市菁××××东路（香樟美地",
+      "reference_answers": [
+        "漳平市菁××××东路（香樟美地）小区。"
+      ],
+      "is_correct": true,
+      "score": 0.75
+    },
+    {
+      "question": "2012年全市规模以上工业企业的增加值增长了多少？",
+      "generated_answer": "6.6%",
+      "reference_answers": [
+        "2012年全市规模以上工业企业的增加值增长了21%。"
+      ],
+      "is_correct": false,
+      "score": 0.0
+    }
+  ]
+}

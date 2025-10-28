@@ -1,0 +1,2413 @@
+{
+  "summary": {
+    "total_questions": 200,
+    "correct_answers": 21,
+    "accuracy": 0.105,
+    "retrieval_success_rate": 1.0,
+    "true_context_match_rate": 0.665,
+    "average_evaluation_score": 0.11647333333258053,
+    "average_qa_score": 0.39703160446479124
+  },
+  "detailed_results": [
+    {
+      "question": "全国美国文学研究会的第十八届年会在哪所大学举办的？",
+      "generated_answer": "厦门大学",
+      "reference_answers": [
+        "厦门大学。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8,
+      "qa_score": 1.8515599630773067,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "过去五年地方财政用于社会保障支出的金额是多少？",
+      "generated_answer": "亿元",
+      "reference_answers": [
+        "6.5亿元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.3333333333333333,
+      "qa_score": 0.7383209028014737,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "二审法院确定了什么样的赔偿金额？",
+      "generated_answer": "违法解除劳动合同赔偿金27,000元",
+      "reference_answers": [
+        "人民币57081.86元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.15378019074341864,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "郗鉴拒绝了谁的建议？",
+      "generated_answer": "温峤",
+      "reference_answers": [
+        "郗鉴拒绝了外戚庾亮废王导的建议。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.1639464418403804,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "奇力锅炉公司支付了多少预付款？",
+      "generated_answer": "10万元",
+      "reference_answers": [
+        "10万元。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8,
+      "qa_score": 0.8760423362255096,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "产品的总行程是多少？",
+      "generated_answer": "香港",
+      "reference_answers": [
+        "10mm。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 7.858048586828481e-11,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "邓某为什么会成为毒品贩子？",
+      "generated_answer": "玩网络赌博",
+      "reference_answers": [
+        "出狱后接触到毒品并输掉大量赌资。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.10527958527381998,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "文章主要讲了哪些历史人物？",
+      "generated_answer": "孟子",
+      "reference_answers": [
+        "织田信长和丰臣秀吉。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.018816183306171297,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "在2012年，铜仁市的财政总收入增长了多少？",
+      "generated_answer": "21.06亿元，增长31.5%",
+      "reference_answers": [
+        "2012年，铜仁市的财政总收入增长了25.89%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.003878893330693245,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "禹在治理九州的过程中遇到了哪些困难？",
+      "generated_answer": "南巡",
+      "reference_answers": [
+        "禹遇到了山川地势复杂、土壤贫瘠、水患频繁等问题。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.001611611689440906,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "主人公身边陆续出现了什么样的人物？",
+      "generated_answer": "并各自为政，互相对立。",
+      "reference_answers": [
+        "主人公身边陆续出现了众多美女，有邻家可人的大姐姐，冷艳高贵的女总裁，妩媚动人的交际花，还有火爆热辣的女警花。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.03548759967088699,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "许茂忠是在什么时间将此案诉至法院的？",
+      "generated_answer": "2014年1月23日",
+      "reference_answers": [
+        "2014年1月23日。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8888888888888888,
+      "qa_score": 0.853044867515564,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "本产品安全手册由哪家公司出版？",
+      "generated_answer": "兄弟工业株式会社",
+      "reference_answers": [
+        "兄弟工业株式会社。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8888888888888888,
+      "qa_score": 0.5961533188819885,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "被告人王德山被捕的时间是什么时候？",
+      "generated_answer": "2013年11月1日",
+      "reference_answers": [
+        "2013年11月1日9时许。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.6363636363636364,
+      "qa_score": 2.2735563553869724,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2018年韶关市的重点工作有哪些？",
+      "generated_answer": "大气污染综合治理",
+      "reference_answers": [
+        "三大主题工作、三大重点民生和三大基础工程。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0002379441527864401,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "原告请求赔偿的损失总额是多少？",
+      "generated_answer": "误工费",
+      "reference_answers": [
+        "40754.95元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.1804006631062407,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "如果对判决不服，应该向哪个法院提起上诉？",
+      "generated_answer": "北京市通州区人民法院",
+      "reference_answers": [
+        "湖南省湘潭市中级人民法院。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.2915418148040771,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "凤凰是如何附体到镭射眼的身上的？",
+      "generated_answer": "凤凰附体到镭射眼等X战警身上。",
+      "reference_answers": [
+        "钢铁侠制造的机器将凤凰之力打散，使凤凰附体到镭射眼身上。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.002296792808920145,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "万小霞提供的第二组证据证明了什么？",
+      "generated_answer": "通知单",
+      "reference_answers": [
+        "证明了王年方等三人与隆泉公司为挂靠关系。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0014771262649446726,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "规档云的联系电话是多少？",
+      "generated_answer": "021-50710282",
+      "reference_answers": [
+        "19901949665。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.27173517690971494,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "黃智海居士的解釋方法有哪兩種？",
+      "generated_answer": "阿彌陀經白話解釋",
+      "reference_answers": [
+        "一種是直接解釋，是照了經的字句，簡簡單單解釋；一種是用來根解釋，要把來根大略說幾句。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.047172971069812775,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "一审判决认为郭海燕、范舒炜之间是否存在真实的股权转让关系？",
+      "generated_answer": "母子关系",
+      "reference_answers": [
+        "没有。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.7250155090587214,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2009年铜川市的旅游综合收入增长了多少？",
+      "generated_answer": "6.5亿元",
+      "reference_answers": [
+        "25%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.039208535687066615,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "如何考核导师培训？",
+      "generated_answer": "自主学习",
+      "reference_answers": [
+        "采用积分制，每位导师每一轮次至少获得3个培训积分。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.06067935409623715,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "西北农林科技大学图书馆何时开始使用计算机流通管理系统？",
+      "generated_answer": "1937",
+      "reference_answers": [
+        "1994年4月。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.01387850308412418,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "万小霞提供的第二组证据证明了什么？",
+      "generated_answer": "通知单",
+      "reference_answers": [
+        "证明了王年方等三人与隆泉公司为挂靠关系。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0014771262649446726,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "被告人王海江犯罪的主要手段是什么？",
+      "generated_answer": "网络赌博",
+      "reference_answers": [
+        "虚构“高乐”、“赵佳”、“刘律师”、“胡建国”等人物，并以虚构人物的名义对被害人进行诈骗。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.5439781919121742,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "教师如何申报“双师双能型”教师资格认定？",
+      "generated_answer": "报销",
+      "reference_answers": [
+        "在每年4月向所在二级学院提出书面申请，填写《浙江科技学院“双师双能型”教师资格认定申请表》，并提交相关证明材料。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.11664497354649939,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2010年金华市的人均生产总值相比于2005年增加了多少元？",
+      "generated_answer": "4600元",
+      "reference_answers": [
+        "21479元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 9.434607051161947e-07,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2020年浙江省的生产总值增长了多少？",
+      "generated_answer": "64613亿元",
+      "reference_answers": [
+        "3.6%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.07182712250505574,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2010年全市农村自来水入户户数是多少？",
+      "generated_answer": "34万人",
+      "reference_answers": [
+        "1.12万户。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.00015211025555572633,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "今年我市的农民人均纯收入增长多少？",
+      "generated_answer": "4802元",
+      "reference_answers": [
+        "13%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.347120389342308,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "湛江总面积多少平方公里？",
+      "generated_answer": "1.32万平方公里",
+      "reference_answers": [
+        "12471平方公里。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.9528286159038544,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "九嶷山位于中国的哪个省份？",
+      "generated_answer": "湖南",
+      "reference_answers": [
+        "九嶷山位于中国湖南省境内。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.15384615384615385,
+      "qa_score": 2.5416035360141223,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2007年金华市的失业率是多少？",
+      "generated_answer": "4.28‰",
+      "reference_answers": [
+        "2.9%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.002725031226873398,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "法院判决被告应支付的利息按照什么利率计算？",
+      "generated_answer": "人民银行基准利率上浮0%计算",
+      "reference_answers": [
+        "按年利率6%支付逾期利息。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.15592060569906607,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "徽州在哪一年被降为徽县？",
+      "generated_answer": "1988",
+      "reference_answers": [
+        "1377年。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 2.8168891873292523e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "2012年规划建设了多少个农业产业园区？",
+      "generated_answer": "18个",
+      "reference_answers": [
+        "28个。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.4448687881231308,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "Osmo Mobile 6支持哪些拍摄模式？",
+      "generated_answer": "DJI OM 补光手机夹及 DJI Mic 等配件",
+      "reference_answers": [
+        "包括运动延时、延时摄影、动态变焦、慢动作、视频、照片、全景拍摄和Story模式。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.18574649095535278,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "本案法院判决原告胜诉还是被告胜诉？",
+      "generated_answer": "其自行承担",
+      "reference_answers": [
+        "原告胜诉。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 4.435783466760768e-06,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "产品应放置在什么样的环境中？",
+      "generated_answer": "清晰、整齐。",
+      "reference_answers": [
+        "温度10°C至35°C，湿度20%至80%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 2.2509967223527383e-08,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "这是哪个市的政府工作报告？",
+      "generated_answer": "市",
+      "reference_answers": [
+        "防城港市。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.2,
+      "qa_score": 0.00016160628064842975,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "\"10\"在格网大小中代表什么意思？",
+      "generated_answer": "计算机病毒",
+      "reference_answers": [
+        "10m格网。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 7.320024906221079e-06,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "泗阳县的著名特产有哪些？",
+      "generated_answer": "泗阳膘鸡、八集小花生等",
+      "reference_answers": [
+        "泗阳膘鸡、御珍酒、穿城大饼、八集小花生、丁庄大菜、泗阳白酥梨、王集小团饼、新袁羊肉等。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.3370282053947449,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "钢铁项目的设备订购进展如何？",
+      "generated_answer": "签",
+      "reference_answers": [
+        "钢铁项目的设备订购正在加快进行。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 2.1156183720449917e-06,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "《桂林电子科技大学学生社团指导教师聘任及考核办法（试行）》的实施时间是什么时候？",
+      "generated_answer": "2021 年 5 月 11 日",
+      "reference_answers": [
+        "从公布之日起实施。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.9031891057966277,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "Web方式使用时需要安装什么控件？",
+      "generated_answer": "邮箱",
+      "reference_answers": [
+        "AchiveX控件。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.05670970530428576,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "韩庚哪一年在哪个音乐颁奖礼上获得了全球最佳艺人奖？",
+      "generated_answer": "欧洲音乐奖",
+      "reference_answers": [
+        "韩庚于2012年在MTV欧洲音乐奖获得了全球最佳艺人奖。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.19230769230769232,
+      "qa_score": 0.8004447910934687,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "郑永涛购买的房屋位于哪个小区？",
+      "generated_answer": "漳平市菁××××东路（香樟美地",
+      "reference_answers": [
+        "漳平市菁××××东路（香樟美地）小区。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.75,
+      "qa_score": 0.1659502841066569,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2012年全市规模以上工业企业的增加值增长了多少？",
+      "generated_answer": "20",
+      "reference_answers": [
+        "2012年全市规模以上工业企业的增加值增长了21%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.09523809523809523,
+      "qa_score": 0.19557124376296997,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "为什么邓某会经常往返公厕？",
+      "generated_answer": "极有可能是在进行毒品",
+      "reference_answers": [
+        "邓某是贩毒团伙的一员，他利用公厕作为交易场所。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.161079540848732,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2009年全市城镇居民人均可支配收入增长了多少？",
+      "generated_answer": "16338元",
+      "reference_answers": [
+        "10.8%.。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.8240115396911278,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "孔子后代首次获得封号是在哪一代？",
+      "generated_answer": "明朝",
+      "reference_answers": [
+        "8世孙，孔腾被汉高祖刘邦封为奉祀君。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0014601321890950203,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "中华民国为何制定这个民用航空法？",
+      "generated_answer": "展",
+      "reference_answers": [
+        "为保障飞航安全，健全民航制度，符合国际民用航空飞行法则，促进民用航空发展。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.038461538461538464,
+      "qa_score": 0.028637481853365898,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "企业暂停的处理流程共有几步？",
+      "generated_answer": "中止、中断",
+      "reference_answers": [
+        "3步。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 3.719442338478984e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "玉溪市的旅游总收入增长了多少？",
+      "generated_answer": "35.1%",
+      "reference_answers": [
+        "35.1%。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8333333333333334,
+      "qa_score": 0.18522818759083748,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "浙江省的出口额增长了多少？",
+      "generated_answer": "25180亿元、增长9.1%",
+      "reference_answers": [
+        "9.1%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0015758682920932188,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "金昌日提出的赵长山在放羊期间不尽心的主张得到了支持吗？",
+      "generated_answer": "不予支持",
+      "reference_answers": [
+        "没有。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.5367638692259789,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "全市的森林覆盖率达到了多少？",
+      "generated_answer": "16%、70%提高到23%和75%。",
+      "reference_answers": [
+        "19.01%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.00015048321802169085,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "青岛市2018年第二产业增加值增长了多少？",
+      "generated_answer": "7.7%左右",
+      "reference_answers": [
+        "7.7%左右。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8333333333333334,
+      "qa_score": 0.49508413672447205,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "墨子的基本價值取向是什麼？",
+      "generated_answer": "墨家平等兼愛、力行和節約",
+      "reference_answers": [
+        "平等兼愛、力行和節約。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.5552995800971985,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2013年全市新增城镇就业人数是多少？",
+      "generated_answer": "34万人",
+      "reference_answers": [
+        "3.2万人。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0012222579157423752,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "事故发生的日期是什么时候？",
+      "generated_answer": "2012年6月2日",
+      "reference_answers": [
+        "事故发生的日期是2012年6月2日。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.4666666666666667,
+      "qa_score": 0.8329244535416365,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "镇原县在元时叫什么？",
+      "generated_answer": "朱元璋",
+      "reference_answers": [
+        "镇原直隶州。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.004913704935461283,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "该产品如何帮助企业掌握档案动态？",
+      "generated_answer": "帮助客户规范管理并高效利用档案",
+      "reference_answers": [
+        "提供总览企业档案管理概况、掌握企业档案借阅流向等功能。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.00702699925750494,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "陈瑜是否认为自己履行了协调停车位的义务？",
+      "generated_answer": "规划车位的义务",
+      "reference_answers": [
+        "是的，陈瑜认为自己已经尽到了协调停车位的义务。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.19142520344877312,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "古人是如何根据天象预测人事的？",
+      "generated_answer": "把天象与人间的吉凶祸福联系起来",
+      "reference_answers": [
+        "古人常用天象来预测人事，把天象与人间的吉凶祸福联系起来，如：彗星的出现被认为是预兆兵灾的凶象；月亮的盈亏圆缺被比附于人事之聚散离合。古代占星家为了用天象变化来占卜人间的吉凶祸福，还将天上星空区域与地上的州国互相对应，称作“分野”。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.19480519480519481,
+      "qa_score": 0.31701333448290825,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "如何购买耗材或清洁材料？",
+      "generated_answer": "类",
+      "reference_answers": [
+        "访问网站：https://imagescanner.fujitsu.com/r/ctl/21。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 5.881280594621785e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "2013年新增绿色食品基地的面积有多大？",
+      "generated_answer": "30万亩",
+      "reference_answers": [
+        "2013年新增绿色食品基地的面积达到30万亩。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.19047619047619047,
+      "qa_score": 0.5760393142700195,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "赵长山是否同意按照劳务合同内容履行？",
+      "generated_answer": "同意按合同内容去履行",
+      "reference_answers": [
+        "是的。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.5279064774513245,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "“营改增”改革取得了哪些具体成果？",
+      "generated_answer": "改善了群众民生福祉。",
+      "reference_answers": [
+        "全年为企业减少地方税费180亿元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.018772384151816368,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "原告刘长生受伤的原因是什么？",
+      "generated_answer": "眼，致左眼受伤。",
+      "reference_answers": [
+        "刘长生受伤的原因是在工作期间，因木料枝疤飞出击中左眼。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.27409717440605164,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "本案中原告许茂忠住院了多少天？",
+      "generated_answer": "27天",
+      "reference_answers": [
+        "27天。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.75,
+      "qa_score": 0.8711525499820709,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "论坛的主题是什么？",
+      "generated_answer": "名校长的成长",
+      "reference_answers": [
+        "论坛的主题是区域名校长的成长。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.38461538461538464,
+      "qa_score": 0.18206809151160996,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "上诉人的上诉请求成功了吗？",
+      "generated_answer": "不能成立",
+      "reference_answers": [
+        "没有成功。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.8630460798740387,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "被告向原告支付了多少保证金？",
+      "generated_answer": "44546.16元",
+      "reference_answers": [
+        "50万元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.038569310010643676,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "如何进行讲义学习？",
+      "generated_answer": "五经于石渠",
+      "reference_answers": [
+        "讲义学习可以在线阅读，或下载到本地阅读。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.017524343287732336,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "原审第三人郑新家对于上诉人意见的看法是什么？",
+      "generated_answer": "不当。",
+      "reference_answers": [
+        "原审第三人郑新家同意上诉人的意见。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.20887161791324615,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "龙门石窟有哪些景点？",
+      "generated_answer": "水",
+      "reference_answers": [
+        "龙门石窟包括西山石窟、东山石窟、香山寺和白园等景点。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 6.00513414564241e-07,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "报告强调要坚持什么思想观点？",
+      "generated_answer": "科学发展观",
+      "reference_answers": [
+        "报告强调要坚持科学发展观。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.38461538461538464,
+      "qa_score": 0.1736512929201126,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "本报告从几个方面总结了工作？",
+      "generated_answer": "3个",
+      "reference_answers": [
+        "6个方面。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.022860215976834297,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "作者的父亲刘英在中共浙江临时省委以及浙江正式省委任职期间有哪些具体工作？",
+      "generated_answer": "任省委委员兼农民部负责人。",
+      "reference_answers": [
+        "父亲担任省委书记，统一领导浙江党的工作，贯彻党的统一战线政策，组织领导开展抗日斗争；大张旗鼓地发动群众开展抗日救亡运动，成立统战部，亲自兼任统战部长，推动与国民党浙江省政府合作，推动颁布了以中共《抗日救国十大纲领》为基础制定的《浙江省战时政治纲领》，促进了抗日进步力量的发展。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.45622433722019196,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "云台山的门票价格是多少？",
+      "generated_answer": "210元",
+      "reference_answers": [
+        "旺季门票价格150元/人，淡季门票60元/人。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.638548731803894,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "阿诺新常见的不良反应有哪些？",
+      "generated_answer": "不良反应常为轻至中度。",
+      "reference_answers": [
+        "阿诺新的常见不良反应包括潮热、关节痛和疲乏等。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.11913600749039688,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "娜塔莉·波特曼获得了哪届奥斯卡金像奖最佳女主角？",
+      "generated_answer": "第83届",
+      "reference_answers": [
+        "83届和89届。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.96668341755867,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "国内销售的工业产品必须提供哪种语言的使用说明书？",
+      "generated_answer": "中文",
+      "reference_answers": [
+        "中文。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.6666666666666666,
+      "qa_score": 1.5919309258460999,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "该产品在什么温度开始热分解？",
+      "generated_answer": "—",
+      "reference_answers": [
+        "220 °C。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.4765955711482093e-06,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "青岛2017年实际利用外资多少美元？",
+      "generated_answer": "86.9亿美元",
+      "reference_answers": [
+        "77.3亿美元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.9625179767608643,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "成人应该如何服用阿诺新？",
+      "generated_answer": "建议餐后服用。",
+      "reference_answers": [
+        "每日一次，每次一片，建议餐后服用。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.5384615384615384,
+      "qa_score": 0.3472353212205235,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "梧州市环城高速公路的工程复杂性如何？",
+      "generated_answer": "工程复杂。",
+      "reference_answers": [
+        "桥梁、隧道在工程中所占比例较高，工程复杂。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.2631578947368421,
+      "qa_score": 0.014054900268092752,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "原告共支付了多少房款？",
+      "generated_answer": "580000元",
+      "reference_answers": [
+        "419001元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0036762384741848564,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "博丽灵梦的职业是什么？",
+      "generated_answer": "提供或制作",
+      "reference_answers": [
+        "幻想乡境内博丽神社的的巫女，负责解决在幻想乡中发生的各种异变。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.4145406484603882,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "MBLAQ的首次单独演唱会在哪里举行？",
+      "generated_answer": "首尔",
+      "reference_answers": [
+        "首尔蚕室室内体育馆。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.2222222222222222,
+      "qa_score": 0.8334266023619108,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "Sun公司与TI公司合作开发了哪款RISC微处理器？",
+      "generated_answer": "英特尔",
+      "reference_answers": [
+        "SPARC。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 6.74404554956709e-06,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2018年韶关居民人均可支配收入增长了多少？",
+      "generated_answer": "破万元",
+      "reference_answers": [
+        "8%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 2.4902322820707923e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "二审法院认为利息应如何计算?",
+      "generated_answer": "按借款合同约定执行利率上浮50%",
+      "reference_answers": [
+        "二审法院认为从郭海燕起诉之日2017年7月4日起，利息应按同期银行贷款利率计算。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.023592808448029245,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "全市\"十二五\"时期累计解决或改善多少户中低收入家庭的住房困难？",
+      "generated_answer": "4.6万户",
+      "reference_answers": [
+        "4.6万户。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8333333333333334,
+      "qa_score": 0.6170108318328857,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "一审判决是哪个法院给出的？",
+      "generated_answer": "最高人民法院",
+      "reference_answers": [
+        "北京市通州区人民法院。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.452098705482058,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "什么是飞航？",
+      "generated_answer": "航空器起降活動之區域。",
+      "reference_answers": [
+        "航空器的起飞、航行、降落和滑行。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.001179228536784649,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "报废机动车在进行拆解作业之前可以侧放或倒放吗？",
+      "generated_answer": "不得侧放、倒放",
+      "reference_answers": [
+        "不可以。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.2796379625797272,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "长沙市在交通方面采取了哪些措施来推动城乡融合？",
+      "generated_answer": "办",
+      "reference_answers": [
+        "启动南、北横线建设，基本实现乡镇30分钟上高速，行政村、自然村100%通水泥路。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 7.036791794234887e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "鹤壁市的经济社会发展还面临着哪些困难和挑战？",
+      "generated_answer": "困难企业普遍走出困境。",
+      "reference_answers": [
+        "鹤壁市的经济社会发展还面临着经济下行压力加大、转型任务艰巨、风险隐患不容忽视、自身建设需要加强等困难和挑战。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.00017620977334331656,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "《孔子世家谱》的编修工作历时多久？",
+      "generated_answer": "7年",
+      "reference_answers": [
+        "7年。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.6666666666666666,
+      "qa_score": 0.7758336246479303,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "\"十一五\"时期我市的港口货物吞吐量增长了多少倍？",
+      "generated_answer": "2.2倍",
+      "reference_answers": [
+        "2.2倍。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.75,
+      "qa_score": 0.7698682470967846,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "极地区文件命名中的标准图号是什么字符？",
+      "generated_answer": "南纬 88°",
+      "reference_answers": [
+        "南北半球均为\"W\"。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 3.4955261270397386e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "附卡持卡人的責任是什么？",
+      "generated_answer": "款負清償責任。",
+      "reference_answers": [
+        "正卡持卡人未依規定清償時，附卡持卡人負責該附卡所生的應付帳款。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.3743356466293335,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "被告人郑术文被指控犯了什么罪？",
+      "generated_answer": "盗窃罪",
+      "reference_answers": [
+        "盗窃罪。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.75,
+      "qa_score": 4.146069425449241,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "Mac OS系统下载MotionPro客户端需要去哪里下载？",
+      "generated_answer": "官网",
+      "reference_answers": [
+        "可以通过AppStore或文档提供的客户端链接下载MotionPro客户端。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.016269273957732366,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "青岛市2018年举办了哪个重大会议？",
+      "generated_answer": "十九届二中、三中全会",
+      "reference_answers": [
+        "上海合作组织成员国元首理事会第十八次会议。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 2.9135874918040372e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "该产品对环境是否有害？",
+      "generated_answer": "无害化",
+      "reference_answers": [
+        "是的，该产品对水生生物毒性极大并具有长期持续影响。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.004588291514664888,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "市的“双百工程”有多少个项目正在建设中？",
+      "generated_answer": "设",
+      "reference_answers": [
+        "市的“双百工程”有246个项目正在建设中。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.047619047619047616,
+      "qa_score": 0.0004536809283308685,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "这段文字主要是关于什么产品手册的内容介绍？",
+      "generated_answer": "和节约能源方面的内容。",
+      "reference_answers": [
+        "这段文字主要是关于状元魔方K12产品手册的内容介绍。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.06903857737779617,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "富兰克林·罗斯福是怎么患残疾的？",
+      "generated_answer": "脑溢血",
+      "reference_answers": [
+        "富兰克林·罗斯福在扑灭了一场林火后，因跳进了冰冷的海水，而患上了脊髓灰质炎症。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.2648048922419548,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "纪念碑的后面介绍了什么？",
+      "generated_answer": "承平宁抗日游击根据地的历史",
+      "reference_answers": [
+        "介绍了承平宁抗日游击根据地的历史。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.7647058823529411,
+      "qa_score": 0.7505673617124557,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2018年青岛市的城镇登记失业率是多少？",
+      "generated_answer": "2.94%",
+      "reference_answers": [
+        "2.94%。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8333333333333334,
+      "qa_score": 3.140511631965637,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "使用什么墨盒可以取得最佳效果？",
+      "generated_answer": "周",
+      "reference_answers": [
+        "原装Brother墨盒。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 8.301860088266722e-08,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "鲁明公司成立多久了？",
+      "generated_answer": "15年",
+      "reference_answers": [
+        "鲁明公司成立了15年。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.2727272727272727,
+      "qa_score": 1.200085534946993e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "鄂尔多斯市建成了多大的生态自然恢复区？",
+      "generated_answer": "２３",
+      "reference_answers": [
+        "2.13万平方公里。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 7.378785312539549e-06,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "嵩山少林寺武术馆每天有几个场次的武术表演？",
+      "generated_answer": "30分钟",
+      "reference_answers": [
+        "7个场次。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.768406230956316,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2005年全市新增了多少个农产品获得绿色食品标志使用权？",
+      "generated_answer": "3个",
+      "reference_answers": [
+        "2005年全市新增了3个农产品获得绿色食品标志使用权。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.08,
+      "qa_score": 1.4730175137519836,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "故事发生在哪个时代和地点？",
+      "generated_answer": "安土桃山时代",
+      "reference_answers": [
+        "故事发生在二十一世纪末的日本。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.5861080836621113,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "文婧是谁的女儿？",
+      "generated_answer": "大戴禮云",
+      "reference_answers": [
+        "文婧是文太极与佰夷族族长女儿的独生女。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0006416657706722617,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "巴斯夫是由哪个公司生产的？",
+      "generated_answer": "中国)有限公司",
+      "reference_answers": [
+        "巴斯夫(中国)有限公司中国。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.5833333333333334,
+      "qa_score": 4.807763161807088e-06,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "意识流文学的作品类型有哪些？",
+      "generated_answer": "戏剧、诗歌中也有表现",
+      "reference_answers": [
+        "意识流文学主要的作品类型为小说，但也表现在戏剧和诗歌等作品类型中。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0014958601677790284,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "VPN使用结束后如何断开连接？",
+      "generated_answer": "点击右上方的“注销”按钮",
+      "reference_answers": [
+        "点击右上方的“注销”按钮，断开连接。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.6666666666666666,
+      "qa_score": 0.5559968650341034,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "交通事故中谁负主要责任？",
+      "generated_answer": "红雨",
+      "reference_answers": [
+        "谢震宏。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.16685485650305054,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "在基于立体卫星影像的DSM生产作业中，影像星下点的分辨率应该满足什么要求？",
+      "generated_answer": "审核要求",
+      "reference_answers": [
+        "分辨率优于5m。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.9906472854547275e-06,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "相较于上个五年，本市的固定资产投资增长了多少？",
+      "generated_answer": "4.4倍",
+      "reference_answers": [
+        "市的固定资产投资增长了4.4倍。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.21428571428571427,
+      "qa_score": 0.13112165592610836,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "法院认定了谁对事故负有责任？",
+      "generated_answer": "聂红雨",
+      "reference_answers": [
+        "根据法院的判决书，法院认定了聂红雨和于峰对事故负有同等责任。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.10714285714285714,
+      "qa_score": 0.7831250665913103,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "阿诺新是否适用于儿童？",
+      "generated_answer": "早期乳",
+      "reference_answers": [
+        "阿诺新不适用于儿童。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.004234141670167446,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "如何清洁本产品？",
+      "generated_answer": "用来掩盖设计上的缺陷。",
+      "reference_answers": [
+        "使用柔软的无绒干抹布。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0022949681151658297,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "有哪些常见的错误消息？",
+      "generated_answer": "判，同时关注对冲基金的风险。",
+      "reference_answers": [
+        "常见的错误消息包括卡纸、无打印盒、背书器错误等。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.11536268889904022,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "郗鉴在永嘉之乱时做了什么？",
+      "generated_answer": "聚众避难于峄山",
+      "reference_answers": [
+        "郗鉴避难于峄山，招抚流民，抵抗石勒等部，聚众至数万。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.3024274408817291,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "原告和被告在何时签订了劳动合同？",
+      "generated_answer": "2015年11月11日",
+      "reference_answers": [
+        "2014年11月4日。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.0479351505637169,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "借款合同中约定的贷款利率是多少？",
+      "generated_answer": "上浮0%",
+      "reference_answers": [
+        "10.08％年利率。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.0547855142503977,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "如何清洁打印盒？",
+      "generated_answer": "模板",
+      "reference_answers": [
+        "关闭扫描仪，取出打印盒，使用无尘干布轻轻擦去喷嘴金属板上过量的油墨，重装打印盒。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0007911589309514966,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "新风光公司向奇力锅炉公司销售了什么产品？",
+      "generated_answer": "2套高压变频器",
+      "reference_answers": [
+        "高压变频器。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.0754992067813873,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "累计为多少贫困户解决了住房问题？",
+      "generated_answer": "5",
+      "reference_answers": [
+        "2110户。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 8.116911246069947e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "桂阳支公司和永州市分公司分别提出了什么上诉请求？",
+      "generated_answer": "投保了交强险",
+      "reference_answers": [
+        "桂阳支公司：要求依法改判第一项；永州分公司：要求依法改判第一、二项。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.16792084038024768,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2018年税收收入增长了多少？",
+      "generated_answer": "7.4%",
+      "reference_answers": [
+        "11.3%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0035620032043937044,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "威宁彝族回族苗族自治县的气候特点是什么？",
+      "generated_answer": "亚热带季风性湿润气候",
+      "reference_answers": [
+        "威宁彝族回族苗族自治县属亚热带季风性湿润气候，年日照时数1812小时，年温差小，日温差大，冬暖夏凉，年降雨量较多。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.23255813953488372,
+      "qa_score": 0.7012673981953412,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "样本指印提取方式有哪些？",
+      "generated_answer": "度",
+      "reference_answers": [
+        "有滚动捺印、平面捺印和局部捺印三种。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0004902152577415109,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "阿诺新的主要成分是什么？",
+      "generated_answer": "甲基雄烷",
+      "reference_answers": [
+        "1.4-二烯-3，17-二酮-6-甲基雄烷。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.25,
+      "qa_score": 0.04914344102144241,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "汤三林在二审中要求补充的一节事实是否被法院认可？",
+      "generated_answer": "2014年9月1日其所填写的普通职",
+      "reference_answers": [
+        "没有被法院认可。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.03925711289048195,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "这篇文章主要从哪几个方面对武威市的情况进行了报告？",
+      "generated_answer": "综合经济实力明显提升。与",
+      "reference_answers": [
+        "从经济实力提升、脱贫攻坚成就、生态环境治理、基础设施条件改善、城乡面貌改观、改革创新推进、人民生活水平提高等方面进行报告。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.00020184210734441876,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "洛阳市以什么为依托来加快打造全国沉浸式文旅目的地？",
+      "generated_answer": "汉服 体验",
+      "reference_answers": [
+        "洛阳市以汉服体验等为依托，增强游客的沉浸式体验，加快打造全国沉浸式文旅目的地。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.7457270324230194,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "MBLAQ在韩国和日本分别以哪首作品出道？",
+      "generated_answer": "《Y》",
+      "reference_answers": [
+        "MBLAQ在韩国以作品《Oh Yeah》正式出道，在日本以作品《Your Luv》正式出道。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.7109631896018982,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "陈某1是否有还款的行为？",
+      "generated_answer": "构成违约",
+      "reference_answers": [
+        "陈某1偿还了部分借款本金及利息。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.17748990841209888,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "图书馆何时建立了多媒体网络电子文献阅览室？",
+      "generated_answer": "1950-1978年",
+      "reference_answers": [
+        "1999年4月。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.000547799551782191,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "承平宁抗战纪念碑是为了纪念什么而建立的？",
+      "generated_answer": "八路",
+      "reference_answers": [
+        "承平宁抗日革命先烈。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.1043998766981531,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "DKVM-22U产品是否支持热插拔功能？",
+      "generated_answer": "支援",
+      "reference_answers": [
+        "是的。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.007117323606507853,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "本文作者如何看待刘向提倡《春秋》穀梁学而又兼用《公羊》《左氏》二传这种矛盾？",
+      "generated_answer": "董仲舒",
+      "reference_answers": [
+        "刘向虽然提倡穀梁学，但其目的并非是为了取代公羊学，而是为了补充公羊学。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.4515963338781148,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "贵州省的基础设施建设有哪些重大突破？",
+      "generated_answer": "两新一重”建设",
+      "reference_answers": [
+        "开展交通建设，推进水利、能源基础设施建设，并推进新基建。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.08815910667181015,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "原告的起诉请求是什么？",
+      "generated_answer": "迟延履行期间的债务利息",
+      "reference_answers": [
+        "要求被告赔偿各项损失共计48543元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.20484183728694916,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "梧州市环城高速公路A标段、B标段和C标段的招标控制价合计是多少万元？",
+      "generated_answer": "2,347.39万元",
+      "reference_answers": [
+        "6264.77万元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.5658373534679413,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "漳平市的气候如何？",
+      "generated_answer": "亚热带季风气候",
+      "reference_answers": [
+        "漳平市属亚热带季风气候，中部河谷地带为南亚热带气候。漳平市气候具有具有温热湿润，雨水充足，冬短无严寒，夏长无酷暑，垂直气候显著，干湿季节分明，灾害性天气时有发生等特点。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.125,
+      "qa_score": 0.2570609040558338,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "至强Nocona的前端总线频率是多少？",
+      "generated_answer": "800MHz",
+      "reference_answers": [
+        "800MHz。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8333333333333334,
+      "qa_score": 0.10714990086853504,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "报废机动车拆解、破碎企业的建设地点应该避开哪些地方？",
+      "generated_answer": "城市居民区",
+      "reference_answers": [
+        "城市居民区、商业区及其他环境敏感区。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.3125,
+      "qa_score": 5.3552541430690326e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "原告和被告之间的买卖合同关系是关于什么？",
+      "generated_answer": "房屋买卖合同纠纷",
+      "reference_answers": [
+        "胶合板材料的买卖合同。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.3505179825842788,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "正常情况下该除草剂可以保存多久？",
+      "generated_answer": "5年",
+      "reference_answers": [
+        "60个月。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 5.007952654523251e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "原告向本院提出了什么诉讼请求？",
+      "generated_answer": "驳回上诉",
+      "reference_answers": [
+        "被告偿还借款及利息，享有抵押权，连带清偿责任，承担诉讼费。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.8800097107887268,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "在过去五年中，邯郸市的生产总值有多少增长？",
+      "generated_answer": "2361.6亿元",
+      "reference_answers": [
+        "从2361.6亿元增长到3145.4亿元，年均增长8.6%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.3684210526315789,
+      "qa_score": 0.09202207997441292,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "上议院领袖如何产生？",
+      "generated_answer": "由选举产生之下议院。",
+      "reference_answers": [
+        "上议院领袖由首相指派产生。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.05339823290705681,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "这份技术规范的实施日期是什么？",
+      "generated_answer": "2015-11-20",
+      "reference_answers": [
+        "2020-08-27。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.2515166336670518,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "2005年全市农村劳动力技能培训了多少人？",
+      "generated_answer": "2.8万人",
+      "reference_answers": [
+        "2.2万人。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0016764000756666064,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "汉文帝采取了哪些措施来利国利民？",
+      "generated_answer": "减省租赋　为了吸引农民归农力本",
+      "reference_answers": [
+        "汉文帝采取了减省租赋、减轻徭役、令列侯归国、弛山泽之禁、废除过关用传制度、入粟拜爵、躬修节俭等措施来利国利民。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.30293598771095276,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "使用前需要注意什么？",
+      "generated_answer": "妥善保管好本手册，以便日后查阅",
+      "reference_answers": [
+        "推荐用户使用360极速浏览器或谷歌浏览器。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.052978236228227615,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "《银河铁道999》是谁创作的作品？",
+      "generated_answer": "松本零士",
+      "reference_answers": [
+        "《银河铁道999》是由松本零士创作的作品。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.2222222222222222,
+      "qa_score": 0.9806324231904,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "奇力锅炉公司未按合同约定支付的是什么款项？",
+      "generated_answer": "预付款10万元",
+      "reference_answers": [
+        "货款17万元及逾期利息。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.16519793588668108,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "根据这个标准，监测飞灰处理过程中废水的频次应为多久一次？",
+      "generated_answer": "4",
+      "reference_answers": [
+        "至少每个季度1次。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.00013166070108838746,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "施嘉明在政府任职了多久？",
+      "generated_answer": "服務公職近四十年",
+      "reference_answers": [
+        "施嘉明在政府任职了近40年。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.08571745856716007,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "被告是否同意原告的诉讼请求？",
+      "generated_answer": "讼",
+      "reference_answers": [
+        "是的，被告王某1、刘某同意原告建行鄂尔多斯分行的诉讼请求，对起诉状中的事实和理由无异议。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.02702702702702703,
+      "qa_score": 0.07212615758180618,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "父亲在浙江临时省委任职期间有哪些具体工作？",
+      "generated_answer": "疫情防控",
+      "reference_answers": [
+        "成立统战部，推动与国民党浙江省政府合作。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.89408575330674e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "城市悉尼在澳大利亚的经济地位如何？",
+      "generated_answer": "量的职能）。",
+      "reference_answers": [
+        "悉尼是澳大利亚第一大城市，也是商业、贸易、金融、旅游和教育中心，悉尼在澳大利亚国民经济中的地位举足轻重。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0003614559245761484,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "什么时候成立了中国科学院水利部水土保持研究所情报期刊研究室？",
+      "generated_answer": "1954年",
+      "reference_answers": [
+        "1979年。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.00014152413711565615,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "今年我市的农村常住居民人均可支配收入增长目标是多少？",
+      "generated_answer": "16188元",
+      "reference_answers": [
+        "10%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.2915271617821418,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "被告华安财险河南分公司赔偿原告的责任比例是多少？",
+      "generated_answer": "6︰4",
+      "reference_answers": [
+        "60%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.7718082070350647,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "鄂尔多斯市在2004年的主要预期目标是什么？",
+      "generated_answer": "增长",
+      "reference_answers": [
+        "GDP增长31.4%,达到360亿元。财政收入增长39.9%，达到40亿元。城镇居民人均可支配收入8500元，增长18%，农牧民人均纯收入4000元，增长29.4%。全社会固定资产投资增长85.9%，达到252亿元。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0425531914893617,
+      "qa_score": 0.0015745538486235944,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "在巴基斯坦，协定中所说的国家银行是哪家银行？",
+      "generated_answer": "常",
+      "reference_answers": [
+        "巴基斯坦国家银行。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.996274511502843e-09,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2018年全市民生投入增长了多少？",
+      "generated_answer": "1058亿元",
+      "reference_answers": [
+        "5.4%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.0019679860497490154,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "2007年的亚洲冬季运动会在哪个城市举行？",
+      "generated_answer": "长春",
+      "reference_answers": [
+        "在中国长春市举行。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.2222222222222222,
+      "qa_score": 0.9856497049331665,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "全市的光伏电站装机规模达到多少兆瓦？",
+      "generated_answer": "亿元",
+      "reference_answers": [
+        "81兆瓦。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.3509948809664607e-06,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "被上诉人的误工费金额是多少？",
+      "generated_answer": "34413.33元",
+      "reference_answers": [
+        "34413.33元。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.8333333333333334,
+      "qa_score": 1.5891549140796997,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "被告人是否自首？",
+      "generated_answer": "被告吴国安辩",
+      "reference_answers": [
+        "是的。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.004126405343413353,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "法院判决被告需要做哪些支付义务？",
+      "generated_answer": "通过",
+      "reference_answers": [
+        "归还借款本金和支付利息。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.06109406799077988,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "曹方的首张个人音乐专辑是？",
+      "generated_answer": "《黑色香水》",
+      "reference_answers": [
+        "黑色香水。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.6619089245796204,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "《画江湖之杯莫停》的第一季有多少集？",
+      "generated_answer": "40集",
+      "reference_answers": [
+        "动画的第一季共有40集。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.25,
+      "qa_score": 1.8060324788093567,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "清明上河园的门票价格是多少？",
+      "generated_answer": "100元",
+      "reference_answers": [
+        "100元。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.75,
+      "qa_score": 1.0389002091251314,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "公共职业介绍服务的内容包括什么？",
+      "generated_answer": "日常服务、招聘会服务、信息服 务",
+      "reference_answers": [
+        "包括日常服务、招聘会服务、信息服务。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.10191266238689423,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2003年鄂尔多斯市的固定资产投资增长了多少？",
+      "generated_answer": "３６０",
+      "reference_answers": [
+        "97.7%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.05886431340644549,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "二审法院对汤三林的诉讼请求做出了怎样的判决？",
+      "generated_answer": "依法改判",
+      "reference_answers": [
+        "二审法院驳回了汤三林的上诉请求，维持了原判。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.9472472846973687,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "事故发生在什么时候？",
+      "generated_answer": "2012年6月2日",
+      "reference_answers": [
+        "2011年8月2日15时许。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.40189377224305645,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "什么机构批准了该标准？",
+      "generated_answer": "浙 江 科 技 学 院",
+      "reference_answers": [
+        "国家环境保护总局。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.006828675512224436,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "电子版说明书应该从哪个网站获取？",
+      "generated_answer": "明书",
+      "reference_answers": [
+        "http://www.95105369.com。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 2.7793706976808608e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "上议院中的常任上诉法官有多少人？",
+      "generated_answer": "92人",
+      "reference_answers": [
+        "12人。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.00015776019426994026,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "如何读取夹爪的夹持状态？",
+      "generated_answer": "回复：01 10 00 06 00 02",
+      "reference_answers": [
+        "发送读取夹持状态的命令即可。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.13180026412010193,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "麦克斯韦建立了哪个实验室？",
+      "generated_answer": "西北水工实验室",
+      "reference_answers": [
+        "卡文迪许实验室。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 1.3567124369728845e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "在过去五年中，市民收入增长多少？",
+      "generated_answer": "4.4倍",
+      "reference_answers": [
+        "城镇居民人均可支配收入、农民人均纯收入年均分别增长15.9%和16.6%。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 0.048491260036826134,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    },
+    {
+      "question": "2011年全市农业发展有哪些成果？",
+      "generated_answer": "同",
+      "reference_answers": [
+        "农业总产值达90亿元。粮食实现增产，甘蔗套种技术在全区推广。防城金花茶被评为国家地理标志保护产品，华石镇火龙果基地列入全国第七批农业标准化示范区等，农业产业化重点龙头企业达13家。"
+      ],
+      "is_correct": false,
+      "eval_score": 0.0,
+      "qa_score": 3.178930273861624e-05,
+      "retrieved_context_count": 3,
+      "true_context_match": false
+    },
+    {
+      "question": "织田信长在1571年击败了哪个宗教团体？",
+      "generated_answer": "天台宗",
+      "reference_answers": [
+        "天台宗。"
+      ],
+      "is_correct": true,
+      "eval_score": 0.75,
+      "qa_score": 3.671115519478917,
+      "retrieved_context_count": 3,
+      "true_context_match": true
+    }
+  ]
+}
