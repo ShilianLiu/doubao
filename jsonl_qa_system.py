@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 
 class JSONLVectorizer:
-    """JSONL数据向量化处理器 - 修复metadata版本"""
+    """JSONL数据向量化处理器 - 无上下文限制版本"""
 
     def __init__(self, embedding_model="BAAI/bge-small-zh-v1.5", persist_directory="./vector_db"):
         self.persist_directory = persist_directory
@@ -91,22 +91,27 @@ class JSONLVectorizer:
         return filtered_metadata
 
     def convert_to_documents(self, data: List[Dict[str, Any]]) -> List[Document]:
-        """将JSONL数据转换为Document对象 - 修复metadata版本"""
+        """将JSONL数据转换为Document对象"""
         documents = []
         for i, item in enumerate(data):
-            # 使用context作为文档内容
+            # 使用context作为文档内容 - 不限制长度
             context = item.get('context', '')
             if not context:
                 logger.warning(f"第{i + 1}条数据缺少context字段")
                 continue
 
-            # 创建metadata - 修复版本
+            # 记录上下文长度信息
+            context_length = len(context)
+            if context_length > 10000:  # 只是记录，不限制
+                logger.info(f"文档 {i + 1} 上下文长度: {context_length} 字符")
+
+            # 创建metadata
             metadata = {
                 "id": item.get('_id', f"doc_{i}"),
-                "input": item.get('input', '')[:200],  # 限制长度
+                "input": item.get('input', '')[:200],  # 限制输入预览长度
                 "dataset": item.get('dataset', 'unknown'),
                 "source": "jsonl_dataset",
-                "length": len(context)
+                "length": context_length
             }
 
             # 处理answers字段 - 转换为字符串
@@ -120,9 +125,9 @@ class JSONLVectorizer:
             # 过滤metadata
             filtered_metadata = self._filter_metadata(metadata)
 
-            # 创建Document对象
+            # 创建Document对象 - 不限制上下文长度
             doc = Document(
-                page_content=context,
+                page_content=context,  # 完整上下文，不截断
                 metadata=filtered_metadata
             )
             documents.append(doc)
@@ -182,23 +187,50 @@ class JSONLVectorizer:
 
 
 class QAEvaluator:
-    """问答评估器"""
+    """问答评估器 - 无上下文限制版本"""
 
-    def __init__(self, qa_model_name="uer/roberta-base-chinese-extractive-qa"):
+    def __init__(self, qa_model_name="uer/roberta-base-chinese-extractive-qa", max_context_length=None):
         self.qa_pipeline = None
+        self.max_context_length = max_context_length  # None表示无限制
         self._initialize_qa_model(qa_model_name)
 
     def _initialize_qa_model(self, model_name):
         """初始化问答模型"""
         try:
             device = 0 if torch.cuda.is_available() else -1
-            self.qa_pipeline = pipeline(
-                "question-answering",
-                model=model_name,
-                tokenizer=model_name,
-                device=device
-            )
+
+            # 根据模型选择合适的tokenizer和模型
+            if "roberta" in model_name.lower() or "chinese" in model_name.lower():
+                # 中文模型
+                self.qa_pipeline = pipeline(
+                    "question-answering",
+                    model=model_name,
+                    tokenizer=model_name,
+                    device=device
+                )
+            else:
+                # 英文或其他模型
+                self.qa_pipeline = pipeline(
+                    "question-answering",
+                    model=model_name,
+                    tokenizer=model_name,
+                    device=device
+                )
+
             logger.info("问答模型初始化成功")
+
+            # 检查模型的最大序列长度
+            try:
+                model_max_length = self.qa_pipeline.tokenizer.model_max_length
+                logger.info(f"模型最大序列长度: {model_max_length}")
+
+                # 如果用户没有设置最大长度，使用模型的最大长度
+                if self.max_context_length is None:
+                    self.max_context_length = model_max_length
+                    logger.info(f"自动设置最大上下文长度为模型限制: {self.max_context_length}")
+            except:
+                logger.warning("无法获取模型最大序列长度，将使用默认处理")
+
         except Exception as e:
             logger.error(f"问答模型初始化失败: {e}")
             # 备用模型
@@ -212,25 +244,109 @@ class QAEvaluator:
             except Exception as e2:
                 logger.error(f"备用模型也失败: {e2}")
 
+    def _smart_truncate_context(self, question: str, context: str, max_length: int) -> str:
+        """智能截断上下文，优先保留与问题相关的部分"""
+        if len(context) <= max_length:
+            return context
+
+        logger.info(f"上下文过长 ({len(context)} 字符)，进行智能截断至 {max_length} 字符")
+
+        # 简单的智能截断策略：
+        # 1. 首先尝试找到包含问题关键词的部分
+        question_words = set(question.lower().split())
+        sentences = context.split('。')  # 按句号分割
+
+        # 计算每个句子与问题的相关性
+        scored_sentences = []
+        for i, sentence in enumerate(sentences):
+            score = 0
+            sentence_words = set(sentence.lower().split())
+            # 计算重叠词汇
+            overlap = len(question_words & sentence_words)
+            score += overlap * 10  # 重叠词汇权重
+
+            # 句子位置权重（开头和结尾的句子通常更重要）
+            if i < 5 or i > len(sentences) - 5:
+                score += 5
+
+            scored_sentences.append((sentence, score, i))
+
+        # 按分数排序
+        scored_sentences.sort(key=lambda x: x[1], reverse=True)
+
+        # 构建新的上下文
+        selected_indices = set()
+        new_context = ""
+        total_length = 0
+
+        # 先添加高分的句子
+        for sentence, score, idx in scored_sentences:
+            if total_length + len(sentence) <= max_length:
+                selected_indices.add(idx)
+                new_context += sentence + "。"
+                total_length += len(sentence) + 1
+
+        # 如果还有空间，按原始顺序添加其他句子以保持连贯性
+        for i, sentence in enumerate(sentences):
+            if i not in selected_indices and total_length + len(sentence) <= max_length:
+                new_context += sentence + "。"
+                total_length += len(sentence) + 1
+
+        logger.info(f"智能截断完成，保留 {len(new_context)} 字符")
+        return new_context
+
     def generate_answer(self, question: str, context: str) -> Dict[str, Any]:
-        """生成答案"""
+        """生成答案 - 无硬性限制版本"""
         if self.qa_pipeline is None:
             return {"answer": "模型未初始化", "score": 0.0}
 
         try:
-            # 限制context长度，避免超过模型限制
-            max_context_length = 4000
-            if len(context) > max_context_length:
-                context = context[:max_context_length]
-                logger.info(f"上下文过长，截断至 {max_context_length} 字符")
+            original_context_length = len(context)
+
+            # 如果没有设置最大长度限制，直接使用完整上下文
+            if self.max_context_length is None:
+                logger.info(f"使用完整上下文，长度: {original_context_length} 字符")
+                final_context = context
+            else:
+                # 使用智能截断
+                final_context = self._smart_truncate_context(question, context, self.max_context_length)
+
+                if len(final_context) < original_context_length:
+                    logger.info(f"上下文从 {original_context_length} 字符截断至 {len(final_context)} 字符")
 
             result = self.qa_pipeline({
                 'question': question,
-                'context': context
+                'context': final_context
             })
+
+            # 添加上下文长度信息到结果中
+            result['original_context_length'] = original_context_length
+            result['used_context_length'] = len(final_context)
+            result['truncated'] = original_context_length > len(final_context)
+
             return result
         except Exception as e:
             logger.error(f"生成答案失败: {e}")
+
+            # 如果失败，尝试更激进的截断
+            if "too long" in str(e).lower() or "max length" in str(e).lower():
+                logger.info("检测到长度相关错误，尝试更激进的截断")
+                try:
+                    # 直接截取前一部分
+                    aggressive_max = min(2000, self.max_context_length or 2000)
+                    short_context = context[:aggressive_max]
+                    result = self.qa_pipeline({
+                        'question': question,
+                        'context': short_context
+                    })
+                    result['original_context_length'] = original_context_length
+                    result['used_context_length'] = len(short_context)
+                    result['truncated'] = True
+                    result['aggressive_truncation'] = True
+                    return result
+                except Exception as e2:
+                    logger.error(f"激进截断也失败: {e2}")
+
             return {"answer": "生成失败", "score": 0.0}
 
     def evaluate_answer(self, generated_answer: str, reference_answers: List[str]) -> Tuple[bool, float]:
@@ -269,29 +385,12 @@ class QAEvaluator:
 
 
 class TestRunner:
-    """测试运行器"""
+    """测试运行器 - 无上下文限制版本"""
 
     def __init__(self, vectorizer: JSONLVectorizer, evaluator: QAEvaluator):
         self.vectorizer = vectorizer
         self.evaluator = evaluator
         self.results = []
-        self.original_data = []  # 存储原始数据用于参考答案
-
-    def load_original_data(self, file_path: str):
-        """加载原始数据用于参考答案"""
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                self.original_data = [json.loads(line.strip()) for line in f]
-            logger.info(f"加载了 {len(self.original_data)} 条原始数据")
-        except Exception as e:
-            logger.error(f"加载原始数据失败: {e}")
-
-    def _get_reference_answers(self, question: str) -> List[str]:
-        """根据问题从原始数据中获取参考答案"""
-        for item in self.original_data:
-            if item.get('input') == question:
-                return item.get('answers', [])
-        return []
 
     def run_test(self, test_data: List[Dict[str, Any]], k: int = 3) -> Dict[str, Any]:
         """运行测试"""
@@ -322,8 +421,13 @@ class TestRunner:
                 })
                 continue
 
-            # 2. 合并检索到的上下文
+            # 2. 合并检索到的上下文 - 不限制长度
             combined_context = "\n".join([doc.page_content for doc in retrieved_docs])
+
+            # 记录上下文统计
+            context_length = len(combined_context)
+            if context_length > 10000:
+                logger.info(f"问题 {i + 1} 合并上下文长度: {context_length} 字符")
 
             # 3. 生成答案
             qa_result = self.evaluator.generate_answer(question, combined_context)
@@ -346,6 +450,9 @@ class TestRunner:
                 "eval_score": eval_score,
                 "qa_score": qa_score,
                 "retrieved_context_count": len(retrieved_docs),
+                "combined_context_length": context_length,
+                "used_context_length": qa_result.get('used_context_length', 0),
+                "truncated": qa_result.get('truncated', False),
                 "true_context_match": any(doc.page_content == true_context for doc in retrieved_docs)
             })
 
@@ -358,7 +465,9 @@ class TestRunner:
             "correct_answers": correct_count,
             "accuracy": accuracy,
             "average_score": avg_score,
-            "retrieved_questions": len([r for r in self.results if r["retrieved_context_count"] > 0])
+            "retrieved_questions": len([r for r in self.results if r["retrieved_context_count"] > 0]),
+            "average_context_length": sum(r.get("combined_context_length", 0) for r in self.results) / len(
+                self.results) if self.results else 0
         }
 
         logger.info(f"测试完成: 准确率 {accuracy:.4f}, 平均得分 {avg_score:.4f}")
@@ -385,9 +494,11 @@ class TestRunner:
         correct = sum(1 for r in self.results if r["is_correct"])
         retrieved = sum(1 for r in self.results if r["retrieved_context_count"] > 0)
         true_context_matched = sum(1 for r in self.results if r.get("true_context_match", False))
+        truncated_count = sum(1 for r in self.results if r.get("truncated", False))
 
         avg_eval_score = sum(r["eval_score"] for r in self.results) / total
         avg_qa_score = sum(r["qa_score"] for r in self.results) / total
+        avg_context_length = sum(r.get("combined_context_length", 0) for r in self.results) / total
 
         return {
             "total_questions": total,
@@ -395,8 +506,10 @@ class TestRunner:
             "accuracy": correct / total,
             "retrieval_success_rate": retrieved / total,
             "true_context_match_rate": true_context_matched / total if total > 0 else 0,
+            "truncation_rate": truncated_count / total,
             "average_evaluation_score": avg_eval_score,
-            "average_qa_score": avg_qa_score
+            "average_qa_score": avg_qa_score,
+            "average_context_length": avg_context_length
         }
 
     def print_detailed_report(self):
@@ -404,15 +517,17 @@ class TestRunner:
         summary = self.get_summary()
 
         print("\n" + "=" * 60)
-        print("测试结果详细报告")
+        print("测试结果详细报告 - 无上下文限制版本")
         print("=" * 60)
         print(f"总问题数: {summary['total_questions']}")
         print(f"正确答案数: {summary['correct_answers']}")
         print(f"准确率: {summary['accuracy']:.4f}")
         print(f"检索成功率: {summary['retrieval_success_rate']:.4f}")
         print(f"真实上下文匹配率: {summary['true_context_match_rate']:.4f}")
+        print(f"上下文截断率: {summary['truncation_rate']:.4f}")
         print(f"平均评估分数: {summary['average_evaluation_score']:.4f}")
         print(f"平均QA分数: {summary['average_qa_score']:.4f}")
+        print(f"平均上下文长度: {summary['average_context_length']:.1f} 字符")
 
         # 显示一些示例
         print("\n示例结果:")
@@ -424,24 +539,29 @@ class TestRunner:
             print(f"参考答案: {result['reference_answers']}")
             print(f"是否正确: {result['is_correct']}")
             print(f"评估分数: {result['eval_score']:.4f}")
+            print(f"上下文长度: {result.get('combined_context_length', 0)} 字符")
+            if result.get('truncated'):
+                print(f"上下文被截断: 是")
 
 
 def main():
-    """主函数"""
+    """主函数 - 无上下文限制版本"""
     # 配置文件路径
     jsonl_file_path = "documents/multifieldqa_zh.jsonl"  # 替换为您的JSONL文件路径
     vector_db_path = "./vector_db"
 
     print("=" * 60)
-    print("JSONL数据集向量化与测试系统 - Metadata修复版本")
+    print("JSONL数据集向量化与测试系统 - 无上下文限制版本")
     print("=" * 60)
 
-    # 1. 初始化组件
+    # 1. 初始化组件 - 设置max_context_length=None表示无限制
     logger.info("初始化向量化处理器...")
     vectorizer = JSONLVectorizer(persist_directory=vector_db_path)
 
     logger.info("初始化问答评估器...")
-    evaluator = QAEvaluator()
+    # max_context_length=None 表示不限制上下文长度
+    # 或者您可以设置为一个很大的数字，如 100000
+    evaluator = QAEvaluator(max_context_length=None)
 
     # 2. 加载和处理数据
     logger.info("加载JSONL数据...")
@@ -474,80 +594,5 @@ def main():
     print("\n测试完成！")
 
 
-# 极简版本 - 如果上述代码仍有问题
-class MinimalVectorizer:
-    """极简版本的向量化处理器"""
-
-    def __init__(self, model_name="BAAI/bge-small-zh-v1.5", persist_dir="./minimal_vector_db"):
-        self.persist_dir = persist_dir
-        self.embeddings = HuggingFaceEmbeddings(model_name=model_name)
-        self.vectorstore = None
-
-    def load_and_process(self, jsonl_path: str):
-        """加载和处理数据 - 极简版本"""
-        # 加载数据
-        data = []
-        with open(jsonl_path, 'r', encoding='utf-8') as f:
-            for line in f:
-                item = json.loads(line.strip())
-                data.append(item)
-
-        # 转换为文档 - 只保留最基本的信息
-        documents = []
-        for i, item in enumerate(data):
-            context = item.get('context', '')
-            if not context:
-                continue
-
-            doc = Document(
-                page_content=context,
-                metadata={
-                    "id": str(i),  # 只使用简单ID
-                    "input_preview": item.get('input', '')[:50]  # 只保存预览
-                }
-            )
-            documents.append(doc)
-
-        # 创建向量存储
-        self.vectorstore = Chroma.from_documents(
-            documents=documents,
-            embedding=self.embeddings,
-            persist_directory=self.persist_dir
-        )
-
-        return data
-
-    def search(self, query: str, k: int = 3):
-        """搜索"""
-        if self.vectorstore:
-            return self.vectorstore.similarity_search(query, k=k)
-        return []
-
-
-def minimal_test():
-    """极简测试"""
-    print("运行极简版本测试...")
-
-    # 初始化
-    vectorizer = MinimalVectorizer()
-    evaluator = QAEvaluator()
-
-    # 加载和处理数据
-    data = vectorizer.load_and_process("documents/multifieldqa_zh.jsonl")  # 替换为您的文件路径
-    print(f"处理了 {len(data)} 条数据")
-
-    # 运行测试
-    test_runner = TestRunner(vectorizer, evaluator)
-    stats = test_runner.run_test(data, k=3)
-
-    test_runner.print_detailed_report()
-    test_runner.save_results("minimal_test_results.json")
-
-
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        logger.error(f"主程序运行失败: {e}")
-        print("尝试运行极简版本...")
-        minimal_test()
+    main()
